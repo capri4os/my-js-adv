@@ -6,8 +6,8 @@ const server = http.createServer((req, res) => {
     console.log(req.url);
     res.end('Hello World!');
 
-    const page = fs.readFileSync('./index.html');
-    res.end(page);
+    const body = fs.readFileSync('./index.html');
+    res.end(body);
 
     const style = fs.readFileSync('./style.css');
     res.end(style);
